@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "网站设置"
+    files:
+      - name: "profile"
+        label: "个人信息"
+        file: "data/profile.json"
+        fields:
+          - {label: "姓名（中文）", name: "nameCn", widget: "string"}
+          - {label: "姓名（英文）", name: "nameEn", widget: "string"}
+          - {label: "简介（中文）", name: "bioCn", widget: "string"}
+          - {label: "简介（英文）", name: "bioEn", widget: "string"}
+          - {label: "邮箱", name: "email", widget: "string"}
+          - {label: "头像", name: "avatar", widget: "image"}
+          - {label: "背景图", name: "heroBg", widget: "image"}
+
+  - name: "experience"
+    label: "实习经历"
+    folder: "data/experience"
+    create: true
+    fields:
+      - {label: "标题（中文）", name: "titleCn", widget: "string"}
+      - {label: "标题（英文）", name: "titleEn", widget: "string"}
+      - {label: "封面图", name: "cover", widget: "image"}
+      - {label: "详细介绍", name: "body", widget: "markdown"}
+
+  - name: "projects"
+    label: "项目经历"
+    folder: "data/projects"
+    create: true
+    fields:
+      - {label: "标题（中文）", name: "titleCn", widget: "string"}
+      - {label: "标题（英文）", name: "titleEn", widget: "string"}
+      - {label: "封面图", name: "cover", widget: "image"}
+      - {label: "详细介绍", name: "body", widget: "markdown"}
