@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/Administrator/Downloads/index_1.html -->
+<!-- saved from url=(0053)file:///C:/Users/Administrator/Downloads/index_3.html -->
 <html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>方青青 Vivian Fang · Portfolio</title>
-<link href="./方青青 Vivian Fang · Portfolio_files/css2" rel="stylesheet">
+<link href="./index_files/css2" rel="stylesheet">
 <style>
 :root {
   --navy: #002D62;
@@ -59,7 +59,7 @@ body.editing .editable:focus { outline: 2px solid var(--blue); }
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  opacity: 0.22;
+  opacity: 1;
   transition: opacity 0.3s;
 }
 .hero-geo { position: absolute; right: 0; top: 0; opacity: 0.06; pointer-events: none; }
@@ -67,8 +67,8 @@ body.editing .editable:focus { outline: 2px solid var(--blue); }
 
 /* AVATAR */
 .avatar-wrap { flex-shrink: 0; position: relative; }
-.avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--mid), var(--light)); border: 2.5px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: 26px; color: white; overflow: hidden; }
-.avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: none; }
+.avatar { width: 110px; height: 110px; border-radius: 50%; background: linear-gradient(135deg, var(--mid), var(--light)); border: 3px solid rgba(255,255,255,0.35); display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: 32px; color: white; overflow: hidden; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
 .avatar-overlay { position: absolute; inset: 0; border-radius: 50%; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; color: white; font-size: 10px; font-weight: 500; text-align: center; line-height: 1.4; cursor: pointer; }
 body.editing .avatar-wrap:hover .avatar-overlay { display: flex; }
 
@@ -216,9 +216,9 @@ body.en .en-block { display: block; }
 <nav>
   <div class="nav-brand">方青青 <span>·</span> Vivian Fang</div>
   <div class="nav-links" id="navLinks">
-    <a href="file:///C:/Users/Administrator/Downloads/index_1.html#experience">实习经历</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_1.html#projects">项目经历</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_1.html#files">文件下载</a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#experience">实习经历</a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#projects">项目经历</a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#files">文件下载</a>
   </div>
   <div class="nav-right">
     <div class="lang-toggle">
@@ -260,7 +260,7 @@ body.en .en-block { display: block; }
     <div class="avatar-wrap" onclick="triggerAvatar()">
       <div class="avatar" id="avatarCircle">
         <span id="avatarInitials" style="display:none">VF</span>
-        <img id="avatarImg" src="file:///C:/Users/Administrator/Downloads/avatar.jpg" alt="头像" style="display:block">
+        <img id="avatarImg" src="file:///C:/Users/Administrator/Downloads/avatar.jpg" alt="头像">
       </div>
       <div class="avatar-overlay">📷<br>换照片</div>
       <input type="file" id="avatarInput" accept="image/*" style="display:none" onchange="handleAvatar(event)">
@@ -317,7 +317,7 @@ body.en .en-block { display: block; }
 
     <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=exp1" onclick="openArticle(event,&#39;exp1&#39;)">
       <div class="card-cover" id="cover-exp1">
-        <img id="coverimg-exp1" src="file:///C:/Users/Administrator/Downloads/cover-exp1.jpg" alt="" style="display:block">
+        <img id="coverimg-exp1" src="file:///C:/Users/Administrator/Downloads/cover-exp1.jpg" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">UL</span>
         <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;exp1&#39;)">📷 上传封面图</div>
         <input type="file" id="coverinput-exp1" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;exp1&#39;)">
@@ -339,7 +339,7 @@ body.en .en-block { display: block; }
 
     <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=exp2" onclick="openArticle(event,&#39;exp2&#39;)">
       <div class="card-cover" id="cover-exp2">
-        <img id="coverimg-exp2" src="file:///C:/Users/Administrator/Downloads/cover-exp2.png" alt="" style="display:block">
+        <img id="coverimg-exp2" src="file:///C:/Users/Administrator/Downloads/cover-exp2.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">LS</span>
         <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;exp2&#39;)">📷 上传封面图</div>
         <input type="file" id="coverinput-exp2" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;exp2&#39;)">
@@ -361,7 +361,7 @@ body.en .en-block { display: block; }
 
     <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=exp3" onclick="openArticle(event,&#39;exp3&#39;)">
       <div class="card-cover" id="cover-exp3">
-        <img id="coverimg-exp3" src="file:///C:/Users/Administrator/Downloads/cover-exp3.png" alt="" style="display:block">
+        <img id="coverimg-exp3" src="file:///C:/Users/Administrator/Downloads/cover-exp3.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">华</span>
         <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;exp3&#39;)">📷 上传封面图</div>
         <input type="file" id="coverinput-exp3" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;exp3&#39;)">
@@ -395,7 +395,7 @@ body.en .en-block { display: block; }
 
     <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=proj1" onclick="openArticle(event,&#39;proj1&#39;)">
       <div class="card-cover" id="cover-proj1">
-        <img id="coverimg-proj1" src="file:///C:/Users/Administrator/Downloads/cover-proj1.jpg" alt="" style="display:block">
+        <img id="coverimg-proj1" src="file:///C:/Users/Administrator/Downloads/cover-proj1.jpg" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">JHU</span>
         <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;proj1&#39;)">📷 上传封面图</div>
         <input type="file" id="coverinput-proj1" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;proj1&#39;)">
@@ -417,7 +417,7 @@ body.en .en-block { display: block; }
 
     <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=proj2" onclick="openArticle(event,&#39;proj2&#39;)">
       <div class="card-cover" id="cover-proj2">
-        <img id="coverimg-proj2" src="file:///C:/Users/Administrator/Downloads/cover-proj2.png" alt="" style="display:block">
+        <img id="coverimg-proj2" src="file:///C:/Users/Administrator/Downloads/cover-proj2.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">研</span>
         <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;proj2&#39;)">📷 上传封面图</div>
         <input type="file" id="coverinput-proj2" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;proj2&#39;)">
@@ -439,7 +439,7 @@ body.en .en-block { display: block; }
 
     <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=proj3" onclick="openArticle(event,&#39;proj3&#39;)">
       <div class="card-cover" id="cover-proj3">
-        <img id="coverimg-proj3" src="file:///C:/Users/Administrator/Downloads/cover-proj3.png" alt="" style="display:block">
+        <img id="coverimg-proj3" src="file:///C:/Users/Administrator/Downloads/cover-proj3.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">文</span>
         <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;proj3&#39;)">📷 上传封面图</div>
         <input type="file" id="coverinput-proj3" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;proj3&#39;)">
@@ -525,7 +525,7 @@ body.en .en-block { display: block; }
   <div class="footer-right">
     <a href="mailto:vivifong2022@163.com"><span class="cn-only">邮箱</span><span class="en-only">Email</span></a>
     <a href="https://www.linkedin.com/in/qingqing-fang-0089943ab" target="_blank">LinkedIn</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_1.html#files"><span class="cn-only">文件</span><span class="en-only">Files</span></a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#files"><span class="cn-only">文件</span><span class="en-only">Files</span></a>
   </div>
 </footer>
 
