@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/Administrator/Downloads/index_3.html -->
+<!-- saved from url=(0053)file:///C:/Users/Administrator/Downloads/index_6.html -->
 <html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,13 +62,18 @@ body.editing .editable:focus { outline: 2px solid var(--blue); }
   opacity: 1;
   transition: opacity 0.3s;
 }
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(0,20,60,0.52);
+}
 .hero-geo { position: absolute; right: 0; top: 0; opacity: 0.06; pointer-events: none; }
 .hero-inner { max-width: 900px; width: 100%; margin: 0 auto; display: flex; align-items: center; gap: 28px; position: relative; z-index: 1; animation: fadeUp 0.5s ease both; }
 
 /* AVATAR */
 .avatar-wrap { flex-shrink: 0; position: relative; }
 .avatar { width: 110px; height: 110px; border-radius: 50%; background: linear-gradient(135deg, var(--mid), var(--light)); border: 3px solid rgba(255,255,255,0.35); display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: 32px; color: white; overflow: hidden; }
-.avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
 .avatar-overlay { position: absolute; inset: 0; border-radius: 50%; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; color: white; font-size: 10px; font-weight: 500; text-align: center; line-height: 1.4; cursor: pointer; }
 body.editing .avatar-wrap:hover .avatar-overlay { display: flex; }
 
@@ -109,7 +114,7 @@ body.editing .bg-upload-btn { display: block; }
   display: flex; align-items: center; justify-content: center;
 }
 .card-cover img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
-.card-cover-placeholder { color: rgba(255,255,255,0.2); font-family: 'DM Serif Display', serif; font-size: 28px; position: relative; z-index: 1; }
+.card-cover-placeholder { display: none; }
 .card-cover-upload { display: none; position: absolute; inset: 0; background: rgba(0,0,0,0.45); align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: 500; z-index: 2; cursor: pointer; }
 body.editing .card-cover:hover .card-cover-upload { display: flex; }
 
@@ -203,6 +208,7 @@ body.en .en-block { display: block; }
   footer { padding: 14px 16px; flex-direction: column; gap: 8px; text-align: center; }
 }
 </style>
+<script src="./index_files/netlify-identity-widget.js.下载"></script>
 </head>
 <body>
 
@@ -216,9 +222,9 @@ body.en .en-block { display: block; }
 <nav>
   <div class="nav-brand">方青青 <span>·</span> Vivian Fang</div>
   <div class="nav-links" id="navLinks">
-    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#experience">实习经历</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#projects">项目经历</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#files">文件下载</a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_6.html#experience">实习经历</a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_6.html#projects">项目经历</a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_6.html#files">文件下载</a>
   </div>
   <div class="nav-right">
     <div class="lang-toggle">
@@ -487,29 +493,20 @@ body.en .en-block { display: block; }
       <div class="file-item" id="file-1">
         <div class="file-icon-wrap fi-pdf">PDF</div>
         <div class="file-info">
-          <div class="file-name">Resume_EN — Vivian Fang.pdf</div>
-          <div class="file-desc"><span class="cn-only">英文简历</span><span class="en-only">English resume</span></div>
+          <div class="file-name">Qingqing Fang-CV-CN.pdf</div>
+          <div class="file-desc"><span class="cn-only">中文简历</span><span class="en-only">Chinese resume</span></div>
         </div>
-        <a class="dl-link" href="file:///C:/Users/Administrator/Downloads/Resume_EN_VivianFang.pdf" download=""><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
+        <a class="dl-link" href="file:///C:/Users/Administrator/Downloads/Qingqing%20Fang-CV-CN.pdf" download=""><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
         <button class="file-del-btn" onclick="deleteFile(&#39;file-1&#39;)">✕</button>
       </div>
       <div class="file-item" id="file-2">
         <div class="file-icon-wrap fi-pdf">PDF</div>
         <div class="file-info">
-          <div class="file-name">Resume_CN — 方青青.pdf</div>
-          <div class="file-desc"><span class="cn-only">中文简历</span><span class="en-only">Chinese resume</span></div>
+          <div class="file-name">Qingqing Fang-CV-EN.pdf</div>
+          <div class="file-desc"><span class="cn-only">英文简历</span><span class="en-only">English resume</span></div>
         </div>
-        <a class="dl-link" href="file:///C:/Users/Administrator/Downloads/Resume_CN_FangQingqing.pdf" download=""><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
+        <a class="dl-link" href="file:///C:/Users/Administrator/Downloads/Qingqing%20Fang-CV-EN.pdf" download=""><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
         <button class="file-del-btn" onclick="deleteFile(&#39;file-2&#39;)">✕</button>
-      </div>
-      <div class="file-item" id="file-3">
-        <div class="file-icon-wrap fi-code">PY</div>
-        <div class="file-info">
-          <div class="file-name">analysis_script.py</div>
-          <div class="file-desc"><span class="cn-only">数据分析代码</span><span class="en-only">Data analysis script</span></div>
-        </div>
-        <a class="dl-link" href="file:///C:/Users/Administrator/Downloads/analysis_script.py" download=""><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
-        <button class="file-del-btn" onclick="deleteFile(&#39;file-3&#39;)">✕</button>
       </div>
       <div class="add-file-row">
         <button class="add-file-btn" onclick="document.getElementById(&#39;fileUploadInput&#39;).click()">＋ <span class="cn-only">添加文件</span><span class="en-only">Add File</span></button>
@@ -525,7 +522,7 @@ body.en .en-block { display: block; }
   <div class="footer-right">
     <a href="mailto:vivifong2022@163.com"><span class="cn-only">邮箱</span><span class="en-only">Email</span></a>
     <a href="https://www.linkedin.com/in/qingqing-fang-0089943ab" target="_blank">LinkedIn</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_3.html#files"><span class="cn-only">文件</span><span class="en-only">Files</span></a>
+    <a href="file:///C:/Users/Administrator/Downloads/index_6.html#files"><span class="cn-only">文件</span><span class="en-only">Files</span></a>
   </div>
 </footer>
 
@@ -681,6 +678,17 @@ function handleFileAdd(e) {
   e.target.value = '';
 }
 </script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
 
 
-</body></html>
+<iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="./index_files/saved_resource.html"></iframe></body></html>
