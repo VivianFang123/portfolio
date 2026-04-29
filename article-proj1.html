@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JHU Spark创业比赛 · 方青青</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #002D62; --blue: #0057B8; --mid: #1A7FD4; --light: #68B3E8;
+  --pale: #E8F3FB; --white: #fff; --off: #F7F9FC;
+  --border: rgba(0,45,98,0.12); --text: #1a1a2e; --muted: #5a6a85;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--off); color: var(--text); font-size: 15px; line-height: 1.7; }
+nav { background: var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 52px; position: sticky; top: 0; z-index: 100; }
+.nav-back { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; }
+.nav-back:hover { color: white; }
+.nav-brand { color: var(--white); font-family: 'DM Serif Display', serif; font-size: 15px; }
+.nav-brand span { color: var(--light); }
+.article-hero { position: relative; height: 280px; background: linear-gradient(135deg, #003F88, var(--mid)); overflow: hidden; }
+.article-hero img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+.article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,45,98,0.75) 0%, transparent 60%); }
+.hero-geo { position: absolute; right: 0; top: 0; opacity: 0.08; pointer-events: none; }
+.article-wrap { max-width: 740px; margin: 0 auto; padding: 44px 24px 80px; }
+.article-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+.article-tag { font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); background: var(--pale); padding: 3px 10px; border-radius: 20px; }
+.article-tag-secondary { font-size: 10px; color: var(--muted); background: rgba(0,45,98,0.06); padding: 3px 10px; border-radius: 20px; }
+.article-title { font-family: 'DM Serif Display', serif; font-size: 36px; color: var(--navy); line-height: 1.2; margin-bottom: 12px; }
+.article-subtitle { font-size: 15px; color: var(--muted); margin-bottom: 32px; }
+.divider { height: 1px; background: var(--border); margin: 32px 0; }
+.article-body { font-size: 15px; line-height: 1.85; color: var(--text); }
+.article-body h3 { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--navy); margin: 32px 0 12px; display: flex; align-items: center; gap: 10px; }
+.article-body h3::before { content: ''; display: inline-block; width: 4px; height: 20px; background: var(--blue); border-radius: 2px; flex-shrink: 0; }
+.article-body p { margin-bottom: 14px; color: #2a2a3e; }
+.article-body strong { font-weight: 500; color: var(--navy); }
+.resp-list { list-style: none; padding: 0; margin: 0; }
+.resp-item { display: flex; gap: 12px; padding: 14px 0; border-bottom: 0.5px solid var(--border); align-items: flex-start; }
+.resp-item:last-child { border-bottom: none; }
+.resp-num { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--blue); flex-shrink: 0; line-height: 1.2; min-width: 28px; }
+.resp-text { font-size: 14px; color: var(--text); line-height: 1.7; }
+footer { background: var(--navy); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+.footer-left { color: rgba(255,255,255,0.4); font-size: 11px; }
+.footer-right a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 11px; margin-left: 16px; }
+.footer-right a:hover { color: var(--light); }
+@media (max-width: 700px) {
+  nav { padding: 0 16px; }
+  .article-hero { height: 200px; }
+  .article-wrap { padding: 28px 16px 60px; }
+  .article-title { font-size: 26px; }
+  footer { padding: 14px 16px; flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-back" href="index.html">← <span class="nav-brand">方青青 <span>·</span> Vivian Fang</span></a>
+</nav>
+
+<div class="article-hero">
+  <img src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-proj1.jpg" alt="JHU Spark">
+  <div class="article-hero-overlay"></div>
+  <svg class="hero-geo" width="300" height="300" viewBox="0 0 520 520" fill="none">
+    <polygon points="260,20 500,160 500,360 260,500 20,360 20,160" stroke="white" stroke-width="1.5"/>
+    <circle cx="260" cy="260" r="140" stroke="white" stroke-width="0.8"/>
+  </svg>
+</div>
+
+<div class="article-wrap">
+  <div class="article-meta">
+    <span class="article-tag">创业竞赛</span>
+    <span class="article-tag-secondary">Johns Hopkins University</span>
+    <span class="article-tag-secondary">Spark 孵化器 · 2025</span>
+  </div>
+  <h1 class="article-title">JHU Spark 创业比赛<br>二手交易平台孵化</h1>
+  <p class="article-subtitle">约翰霍普金斯大学 Spark 创业孵化器 · 2025</p>
+  <div class="divider"></div>
+
+  <div class="article-body">
+
+    <h3>项目概述</h3>
+    <p>主导从用户洞察、产品概念定义到上市策略规划的全过程，解决校园二手交易市场<strong>信息不对称与信任缺失</strong>的核心痛点，打造专为大学生设计的可信赖二手交易平台。</p>
+
+    <h3>项目职责</h3>
+    <ul class="resp-list">
+      <li class="resp-item">
+        <span class="resp-num">①</span>
+        <span class="resp-text">设计并执行用户调研，定性定量结合，<strong>精准识别三类核心用户画像</strong>及其痛点，为产品方向奠定数据基础。</span>
+      </li>
+      <li class="resp-item">
+        <span class="resp-num">②</span>
+        <span class="resp-text">基于用户洞察，定义产品核心价值主张，<strong>制定 MVP 功能优先级矩阵</strong>，明确最小可行产品的核心功能边界。</span>
+      </li>
+      <li class="resp-item">
+        <span class="resp-num">③</span>
+        <span class="resp-text">完成竞争格局分析，深入研究现有二手交易平台的优劣势，<strong>明确差异化定位</strong>，构建护城河。</span>
+      </li>
+      <li class="resp-item">
+        <span class="resp-num">④</span>
+        <span class="resp-text">制定以<strong>校园渠道为核心、社交媒体为杠杆</strong>的整合上市策略，规划从渠道触达、内容沟通到落地页转化的完整用户获取路径。</span>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<footer>
+  <span class="footer-left">© 2026 方青青 · Vivian Fang</span>
+  <div class="footer-right">
+    <a href="index.html">← 返回主页</a>
+    <a href="mailto:vivifong2022@163.com">邮箱</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中老年微短剧社交媒体传播策略研究 · 方青青</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #002D62; --blue: #0057B8; --mid: #1A7FD4; --light: #68B3E8;
+  --pale: #E8F3FB; --white: #fff; --off: #F7F9FC;
+  --border: rgba(0,45,98,0.12); --text: #1a1a2e; --muted: #5a6a85;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--off); color: var(--text); font-size: 15px; line-height: 1.7; }
+nav { background: var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 52px; position: sticky; top: 0; z-index: 100; }
+.nav-back { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; }
+.nav-back:hover { color: white; }
+.nav-brand { color: var(--white); font-family: 'DM Serif Display', serif; font-size: 15px; }
+.nav-brand span { color: var(--light); }
+.article-hero { position: relative; height: 280px; background: linear-gradient(135deg, #003F88, var(--mid)); overflow: hidden; }
+.article-hero img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+.article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,45,98,0.75) 0%, transparent 60%); }
+.hero-geo { position: absolute; right: 0; top: 0; opacity: 0.08; pointer-events: none; }
+.article-wrap { max-width: 740px; margin: 0 auto; padding: 44px 24px 80px; }
+.article-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+.article-tag { font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); background: var(--pale); padding: 3px 10px; border-radius: 20px; }
+.article-tag-secondary { font-size: 10px; color: var(--muted); background: rgba(0,45,98,0.06); padding: 3px 10px; border-radius: 20px; }
+.article-title { font-family: 'DM Serif Display', serif; font-size: 36px; color: var(--navy); line-height: 1.2; margin-bottom: 12px; }
+.article-subtitle { font-size: 15px; color: var(--muted); margin-bottom: 32px; }
+.divider { height: 1px; background: var(--border); margin: 32px 0; }
+.article-body { font-size: 15px; line-height: 1.85; color: var(--text); }
+.article-body h3 { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--navy); margin: 32px 0 12px; display: flex; align-items: center; gap: 10px; }
+.article-body h3::before { content: ''; display: inline-block; width: 4px; height: 20px; background: var(--blue); border-radius: 2px; flex-shrink: 0; }
+.article-body p { margin-bottom: 14px; color: #2a2a3e; }
+.article-body strong { font-weight: 500; color: var(--navy); }
+.stat-row { display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap; }
+.stat-box { background: white; border: 0.5px solid var(--border); border-radius: 8px; padding: 14px 18px; flex: 1; min-width: 130px; text-align: center; }
+.stat-num { font-family: 'DM Serif Display', serif; font-size: 26px; color: var(--navy); display: block; }
+.stat-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.theme-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+.theme-box { background: white; border: 0.5px solid var(--border); border-radius: 8px; padding: 14px; text-align: center; }
+.theme-icon { font-size: 22px; margin-bottom: 6px; }
+.theme-title { font-size: 12px; font-weight: 500; color: var(--navy); }
+.problem-box { background: #fff8f0; border: 1px solid rgba(180,80,0,0.12); border-radius: 10px; padding: 18px 22px; margin: 20px 0; }
+.problem-box h4 { font-size: 12px; font-weight: 500; letter-spacing: 1px; color: #8B4500; margin-bottom: 10px; }
+.problem-item { display: flex; gap: 8px; font-size: 13px; color: var(--text); margin-bottom: 8px; }
+.problem-item:last-child { margin-bottom: 0; }
+.resp-list { list-style: none; padding: 0; margin: 0; }
+.resp-item { display: flex; gap: 12px; padding: 14px 0; border-bottom: 0.5px solid var(--border); align-items: flex-start; }
+.resp-item:last-child { border-bottom: none; }
+.resp-num { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--blue); flex-shrink: 0; line-height: 1.2; min-width: 28px; }
+.resp-text { font-size: 14px; color: var(--text); line-height: 1.7; }
+footer { background: var(--navy); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+.footer-left { color: rgba(255,255,255,0.4); font-size: 11px; }
+.footer-right a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 11px; margin-left: 16px; }
+.footer-right a:hover { color: var(--light); }
+@media (max-width: 700px) {
+  nav { padding: 0 16px; }
+  .article-hero { height: 200px; }
+  .article-wrap { padding: 28px 16px 60px; }
+  .article-title { font-size: 26px; }
+  .theme-grid { grid-template-columns: repeat(3, 1fr); }
+  footer { padding: 14px 16px; flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-back" href="index.html">← <span class="nav-brand">方青青 <span>·</span> Vivian Fang</span></a>
+</nav>
+
+<div class="article-hero">
+  <img src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-proj2.png" alt="微短剧研究">
+  <div class="article-hero-overlay"></div>
+  <svg class="hero-geo" width="300" height="300" viewBox="0 0 520 520" fill="none">
+    <polygon points="260,20 500,160 500,360 260,500 20,360 20,160" stroke="white" stroke-width="1.5"/>
+    <circle cx="260" cy="260" r="140" stroke="white" stroke-width="0.8"/>
+  </svg>
+</div>
+
+<div class="article-wrap">
+  <div class="article-meta">
+    <span class="article-tag">独立调研</span>
+    <span class="article-tag-secondary">社交媒体传播策略</span>
+    <span class="article-tag-secondary">独立研究</span>
+  </div>
+  <h1 class="article-title">中老年微短剧<br>社交媒体传播策略研究</h1>
+  <p class="article-subtitle">独立调研 · 内容传播分析 · 2024</p>
+  <div class="divider"></div>
+
+  <div class="article-body">
+
+    <h3>项目概述</h3>
+    <p>系统拆解微短剧的内容特点与传播逻辑，以中老年受众为核心研究对象，<strong>诊断行业现存问题并提出优化方案</strong>，探索这一新兴内容赛道的可持续发展路径。</p>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num">30+</span>
+        <span class="stat-label">建立多维样本库</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">3</span>
+        <span class="stat-label">核心主题提炼</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">20+</span>
+        <span class="stat-label">对比分析作品数</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">3</span>
+        <span class="stat-label">核心问题识别</span>
+      </div>
+    </div>
+
+    <h3>研究方法</h3>
+    <ul class="resp-list">
+      <li class="resp-item">
+        <span class="resp-num">①</span>
+        <span class="resp-text"><strong>建立多维度样本库</strong>：从抖音「2024 短剧热度榜」、腾讯视频微短剧专区筛选 30+ 部中老年主演作品，整理包含单平台播放量、受众画像、主题类型、传播渠道的核心数据。</span>
+      </li>
+      <li class="resp-item">
+        <span class="resp-num">②</span>
+        <span class="resp-text"><strong>特质拆解</strong>：通过文本分析法，提炼核心主题，总结男主、女主的二元角色模型，归纳中老年微短剧的内容公式。</span>
+      </li>
+      <li class="resp-item">
+        <span class="resp-num">③</span>
+        <span class="resp-text"><strong>问题诊断</strong>：通过对比分析 20+ 部作品，识别行业核心问题，提出针对性优化建议。</span>
+      </li>
+    </ul>
+
+    <h3>三大核心主题</h3>
+    <div class="theme-grid">
+      <div class="theme-box">
+        <div class="theme-icon">👨‍👩‍👧</div>
+        <div class="theme-title">家庭矛盾化解</div>
+      </div>
+      <div class="theme-box">
+        <div class="theme-icon">💕</div>
+        <div class="theme-title">中老年爱情追求</div>
+      </div>
+      <div class="theme-box">
+        <div class="theme-icon">🌟</div>
+        <div class="theme-title">晚年自我实现</div>
+      </div>
+    </div>
+
+    <div class="problem-box">
+      <h4>⚠️ 识别三大核心问题</h4>
+      <div class="problem-item">① <strong>内容同质化</strong>：题材高度重复，缺乏差异化叙事视角</div>
+      <div class="problem-item">② <strong>传播渠道单一</strong>：过度依赖短视频平台，跨平台触达能力弱</div>
+      <div class="problem-item">③ <strong>商业变现局限</strong>：付费转化路径不完善，变现模式较为单一</div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span class="footer-left">© 2026 方青青 · Vivian Fang</span>
+  <div class="footer-right">
+    <a href="index.html">← 返回主页</a>
+    <a href="mailto:vivifong2022@163.com">邮箱</a>
+  </div>
+</footer>
+</body>
+</html>

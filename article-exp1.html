@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联合利华市场部新品孵化项目 · 方青青</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #002D62; --blue: #0057B8; --mid: #1A7FD4; --light: #68B3E8;
+  --pale: #E8F3FB; --white: #fff; --off: #F7F9FC;
+  --border: rgba(0,45,98,0.12); --text: #1a1a2e; --muted: #5a6a85;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--off); color: var(--text); font-size: 15px; line-height: 1.7; }
+
+nav { background: var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 52px; position: sticky; top: 0; z-index: 100; }
+.nav-back { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+.nav-back:hover { color: white; }
+.nav-brand { color: var(--white); font-family: 'DM Serif Display', serif; font-size: 15px; }
+.nav-brand span { color: var(--light); }
+
+.article-hero {
+  position: relative; height: 280px;
+  background: linear-gradient(135deg, var(--navy), var(--mid));
+  overflow: hidden;
+}
+.article-hero img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+.article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,45,98,0.75) 0%, transparent 60%); }
+.hero-geo { position: absolute; right: 0; top: 0; opacity: 0.08; pointer-events: none; }
+
+.article-wrap { max-width: 740px; margin: 0 auto; padding: 44px 24px 80px; }
+.article-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+.article-tag { font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); background: var(--pale); padding: 3px 10px; border-radius: 20px; }
+.article-tag-secondary { font-size: 10px; color: var(--muted); background: rgba(0,45,98,0.06); padding: 3px 10px; border-radius: 20px; }
+
+.article-title { font-family: 'DM Serif Display', serif; font-size: 36px; color: var(--navy); line-height: 1.2; margin-bottom: 12px; }
+.article-subtitle { font-size: 15px; color: var(--muted); margin-bottom: 32px; line-height: 1.6; }
+.divider { height: 1px; background: var(--border); margin: 32px 0; }
+
+.article-body { font-size: 15px; line-height: 1.85; color: var(--text); }
+.article-body h3 { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--navy); margin: 32px 0 12px; display: flex; align-items: center; gap: 10px; }
+.article-body h3::before { content: ''; display: inline-block; width: 4px; height: 20px; background: var(--blue); border-radius: 2px; flex-shrink: 0; }
+.article-body p { margin-bottom: 14px; color: #2a2a3e; }
+.article-body ul { padding-left: 20px; margin-bottom: 16px; }
+.article-body li { margin-bottom: 10px; color: #2a2a3e; }
+.article-body strong { font-weight: 500; color: var(--navy); }
+
+.achievement-box { background: linear-gradient(135deg, var(--pale), #f0f8ff); border: 1px solid rgba(0,87,184,0.15); border-radius: 10px; padding: 20px 24px; margin: 24px 0; }
+.achievement-box h4 { font-size: 12px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+.achievement-item { display: flex; gap: 10px; margin-bottom: 10px; font-size: 14px; color: var(--text); line-height: 1.6; }
+.achievement-item:last-child { margin-bottom: 0; }
+.achievement-num { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--blue); flex-shrink: 0; line-height: 1.2; }
+
+footer { background: var(--navy); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+.footer-left { color: rgba(255,255,255,0.4); font-size: 11px; }
+.footer-right a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 11px; margin-left: 16px; }
+.footer-right a:hover { color: var(--light); }
+
+@media (max-width: 700px) {
+  nav { padding: 0 16px; }
+  .article-hero { height: 200px; }
+  .article-wrap { padding: 28px 16px 60px; }
+  .article-title { font-size: 26px; }
+  footer { padding: 14px 16px; flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-back" href="index.html">← <span class="nav-brand">方青青 <span>·</span> Vivian Fang</span></a>
+</nav>
+
+<div class="article-hero">
+  <img src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-exp1.jpg" alt="联合利华">
+  <div class="article-hero-overlay"></div>
+  <svg class="hero-geo" width="300" height="300" viewBox="0 0 520 520" fill="none">
+    <polygon points="260,20 500,160 500,360 260,500 20,360 20,160" stroke="white" stroke-width="1.5"/>
+    <circle cx="260" cy="260" r="140" stroke="white" stroke-width="0.8"/>
+  </svg>
+</div>
+
+<div class="article-wrap">
+  <div class="article-meta">
+    <span class="article-tag">实习</span>
+    <span class="article-tag-secondary">联合利华</span>
+    <span class="article-tag-secondary">市场部实习生</span>
+  </div>
+  <h1 class="article-title">联合利华市场部<br>新品孵化项目</h1>
+  <p class="article-subtitle">市场部 · 实习生 · 上海</p>
+  <div class="divider"></div>
+
+  <div class="article-body">
+
+    <h3>市场分析</h3>
+    <p>负责空气净化器品类市场复盘，分析天猫、京东平台数据，追踪竞品新动态、定价策略及功能卖点，为团队提供及时、系统的市场洞察支持。</p>
+
+    <h3>概念开发</h3>
+    <p>参与"净化+香氛二合一"新品孵化项目，从 0 到 1 负责前期消费者调研；基于用户洞察，提出<strong>「固态香薰片」替换方案</strong>；搭建完整的产品概念沟通体系，明确核心卖点与信任支撑。</p>
+
+    <h3>消费者洞察</h3>
+    <p>通过电商评论分析及定性访谈，深度挖掘消费者的痛点；在调研中精准定位目标客群对产品的价格接受区间与外观偏好，为后续产品定价、定位及 GTM 策略制定提供决策依据。</p>
+
+    <h3>营销传播</h3>
+    <p>负责新品社交媒体内容矩阵搭建，针对小红书、微博、知乎三平台特性，定制化输出从种草到科普的多元化内容，构建完整的用户触达链路。</p>
+
+  </div>
+</div>
+
+<footer>
+  <span class="footer-left">© 2026 方青青 · Vivian Fang</span>
+  <div class="footer-right">
+    <a href="index.html">← 返回主页</a>
+    <a href="mailto:vivifong2022@163.com">邮箱</a>
+  </div>
+</footer>
+
+</body>
+</html>
