@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/Administrator/Downloads/index_8.html -->
-<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>方青青 Vivian Fang · Portfolio</title>
-<link href="./方青青 Vivian Fang · Portfolio_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --navy: #002D62;
@@ -208,7 +208,7 @@ body.en .en-block { display: block; }
   footer { padding: 14px 16px; flex-direction: column; gap: 8px; text-align: center; }
 }
 </style>
-<script src="./方青青 Vivian Fang · Portfolio_files/netlify-identity-widget.js.下载"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -222,14 +222,14 @@ body.en .en-block { display: block; }
 <nav>
   <div class="nav-brand">方青青 <span>·</span> Vivian Fang</div>
   <div class="nav-links" id="navLinks">
-    <a href="file:///C:/Users/Administrator/Downloads/index_8.html#experience">实习经历</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_8.html#projects">项目经历</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_8.html#files">文件下载</a>
+    <a href="#experience">实习经历</a>
+    <a href="#projects">项目经历</a>
+    <a href="#files">文件下载</a>
   </div>
   <div class="nav-right">
     <div class="lang-toggle">
-      <button class="lang-btn active" id="btnCn" onclick="setLang(&#39;cn&#39;)">中</button>
-      <button class="lang-btn" id="btnEn" onclick="setLang(&#39;en&#39;)">EN</button>
+      <button class="lang-btn active" id="btnCn" onclick="setLang('cn')">中</button>
+      <button class="lang-btn" id="btnEn" onclick="setLang('en')">EN</button>
     </div>
     <button class="edit-btn" id="editBtn" onclick="showEditModal()">✏️ 编辑</button>
   </div>
@@ -240,7 +240,7 @@ body.en .en-block { display: block; }
   <div class="modal">
     <h3>编辑验证</h3>
     <p>请输入编辑密码以进入编辑模式</p>
-    <input class="modal-input" type="password" id="editPwInput" placeholder="请输入编辑密码" onkeydown="if(event.key===&#39;Enter&#39;)confirmEdit()">
+    <input class="modal-input" type="password" id="editPwInput" placeholder="请输入编辑密码" onkeydown="if(event.key==='Enter')confirmEdit()">
     <div class="modal-err" id="editPwErr">密码错误，请重试</div>
     <div class="modal-btns">
       <button class="modal-cancel" onclick="closeEditModal()">取消</button>
@@ -251,22 +251,22 @@ body.en .en-block { display: block; }
 
 <!-- HERO -->
 <div class="hero" id="heroSection">
-  <div class="hero-bg" id="heroBg" style="background-image:url(&#39;https://raw.githubusercontent.com/VivianFang123/portfolio/main/hero-bg.png&#39;)"></div>
+  <div class="hero-bg" id="heroBg" style="background-image:url('https://raw.githubusercontent.com/VivianFang123/portfolio/main/hero-bg.png')"></div>
   <svg class="hero-geo" width="400" height="400" viewBox="0 0 520 520" fill="none">
-    <polygon points="260,20 500,160 500,360 260,500 20,360 20,160" stroke="white" stroke-width="1.5"></polygon>
-    <polygon points="260,70 450,180 450,340 260,450 70,340 70,180" stroke="white" stroke-width="1"></polygon>
-    <circle cx="260" cy="260" r="140" stroke="white" stroke-width="0.5"></circle>
-    <line x1="260" y1="20" x2="260" y2="500" stroke="white" stroke-width="0.5"></line>
-    <line x1="20" y1="260" x2="500" y2="260" stroke="white" stroke-width="0.5"></line>
+    <polygon points="260,20 500,160 500,360 260,500 20,360 20,160" stroke="white" stroke-width="1.5"/>
+    <polygon points="260,70 450,180 450,340 260,450 70,340 70,180" stroke="white" stroke-width="1"/>
+    <circle cx="260" cy="260" r="140" stroke="white" stroke-width="0.5"/>
+    <line x1="260" y1="20" x2="260" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="20" y1="260" x2="500" y2="260" stroke="white" stroke-width="0.5"/>
   </svg>
-  <button class="bg-upload-btn" onclick="document.getElementById(&#39;bgInput&#39;).click()">🖼 更换背景图</button>
+  <button class="bg-upload-btn" onclick="document.getElementById('bgInput').click()">🖼 更换背景图</button>
   <input type="file" id="bgInput" accept="image/*" style="display:none" onchange="handleBgUpload(event)">
 
   <div class="hero-inner">
     <div class="avatar-wrap" onclick="triggerAvatar()">
       <div class="avatar" id="avatarCircle">
         <span id="avatarInitials" style="display:none">VF</span>
-        <img id="avatarImg" src="./方青青 Vivian Fang · Portfolio_files/avatar.jpg" alt="头像">
+        <img id="avatarImg" src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/avatar.jpg" alt="头像">
       </div>
       <div class="avatar-overlay">📷<br>换照片</div>
       <input type="file" id="avatarInput" accept="image/*" style="display:none" onchange="handleAvatar(event)">
@@ -295,16 +295,16 @@ body.en .en-block { display: block; }
       <div class="hero-tags">
         <span class="hero-tag"><span class="cn-only editable" contenteditable="false">品牌策略</span><span class="en-only">Brand Strategy</span></span>
         <span class="hero-tag"><span class="cn-only editable" contenteditable="false">数字营销</span><span class="en-only">Digital Marketing</span></span>
-        <span class="hero-tag"><span class="cn-only editable" contenteditable="false">内容与媒体</span><span class="en-only">Content &amp; Media</span></span>
+        <span class="hero-tag"><span class="cn-only editable" contenteditable="false">内容与媒体</span><span class="en-only">Content & Media</span></span>
         <span class="hero-tag"><span class="cn-only editable" contenteditable="false">中英双语</span><span class="en-only">Bilingual CN/EN</span></span>
       </div>
       <div class="hero-contacts">
         <a class="contact-link" id="emailLink" href="mailto:vivifong2022@163.com">
-          <svg class="contact-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.3"></rect><path d="M2 6l8 6 8-6" stroke="currentColor" stroke-width="1.3"></path></svg>
+          <svg class="contact-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M2 6l8 6 8-6" stroke="currentColor" stroke-width="1.3"/></svg>
           <span class="editable" contenteditable="false" id="emailText">vivifong2022@163.com</span>
         </a>
         <a class="contact-link" href="https://www.linkedin.com/in/qingqing-fang-0089943ab" target="_blank">
-          <svg class="contact-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M16 2H4a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zM7 15H5v-6h2v6zm-1-7a1 1 0 110-2 1 1 0 010 2zm9 7h-2v-3.2c0-.8-.3-1.3-1-1.3-.5 0-.9.4-1 .8V15H9V9h2v.9c.4-.6 1-1 1.8-1C14.3 8.9 15 9.8 15 11.2V15z"></path></svg>
+          <svg class="contact-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M16 2H4a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zM7 15H5v-6h2v6zm-1-7a1 1 0 110-2 1 1 0 010 2zm9 7h-2v-3.2c0-.8-.3-1.3-1-1.3-.5 0-.9.4-1 .8V15H9V9h2v.9c.4-.6 1-1 1.8-1C14.3 8.9 15 9.8 15 11.2V15z"/></svg>
           LinkedIn
         </a>
       </div>
@@ -321,12 +321,12 @@ body.en .en-block { display: block; }
   </div>
   <div class="card-grid">
 
-    <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=exp1" onclick="openArticle(event,&#39;exp1&#39;)">
+    <a class="card" href="article.html?id=exp1" onclick="openArticle(event,'exp1')">
       <div class="card-cover" id="cover-exp1">
-        <img id="coverimg-exp1" src="./方青青 Vivian Fang · Portfolio_files/cover-exp1.jpg" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <img id="coverimg-exp1" src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-exp1.jpg" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">UL</span>
-        <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;exp1&#39;)">📷 上传封面图</div>
-        <input type="file" id="coverinput-exp1" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;exp1&#39;)">
+        <div class="card-cover-upload" onclick="triggerCoverUpload(event,'exp1')">📷 上传封面图</div>
+        <input type="file" id="coverinput-exp1" accept="image/*" style="display:none" onchange="handleCoverUpload(event,'exp1')">
       </div>
       <div class="card-accent navy"></div>
       <div class="card-body">
@@ -343,12 +343,12 @@ body.en .en-block { display: block; }
       </div>
     </a>
 
-    <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=exp2" onclick="openArticle(event,&#39;exp2&#39;)">
+    <a class="card" href="article.html?id=exp2" onclick="openArticle(event,'exp2')">
       <div class="card-cover" id="cover-exp2">
-        <img id="coverimg-exp2" src="./方青青 Vivian Fang · Portfolio_files/cover-exp2.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <img id="coverimg-exp2" src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-exp2.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">LS</span>
-        <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;exp2&#39;)">📷 上传封面图</div>
-        <input type="file" id="coverinput-exp2" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;exp2&#39;)">
+        <div class="card-cover-upload" onclick="triggerCoverUpload(event,'exp2')">📷 上传封面图</div>
+        <input type="file" id="coverinput-exp2" accept="image/*" style="display:none" onchange="handleCoverUpload(event,'exp2')">
       </div>
       <div class="card-accent navy"></div>
       <div class="card-body">
@@ -365,12 +365,12 @@ body.en .en-block { display: block; }
       </div>
     </a>
 
-    <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=exp3" onclick="openArticle(event,&#39;exp3&#39;)">
+    <a class="card" href="article.html?id=exp3" onclick="openArticle(event,'exp3')">
       <div class="card-cover" id="cover-exp3">
-        <img id="coverimg-exp3" src="./方青青 Vivian Fang · Portfolio_files/cover-exp3.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <img id="coverimg-exp3" src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-exp3.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">华</span>
-        <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;exp3&#39;)">📷 上传封面图</div>
-        <input type="file" id="coverinput-exp3" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;exp3&#39;)">
+        <div class="card-cover-upload" onclick="triggerCoverUpload(event,'exp3')">📷 上传封面图</div>
+        <input type="file" id="coverinput-exp3" accept="image/*" style="display:none" onchange="handleCoverUpload(event,'exp3')">
       </div>
       <div class="card-accent navy"></div>
       <div class="card-body">
@@ -399,12 +399,12 @@ body.en .en-block { display: block; }
   </div>
   <div class="card-grid">
 
-    <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=proj1" onclick="openArticle(event,&#39;proj1&#39;)">
+    <a class="card" href="article.html?id=proj1" onclick="openArticle(event,'proj1')">
       <div class="card-cover" id="cover-proj1">
-        <img id="coverimg-proj1" src="./方青青 Vivian Fang · Portfolio_files/cover-proj1.jpg" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <img id="coverimg-proj1" src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-proj1.jpg" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">JHU</span>
-        <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;proj1&#39;)">📷 上传封面图</div>
-        <input type="file" id="coverinput-proj1" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;proj1&#39;)">
+        <div class="card-cover-upload" onclick="triggerCoverUpload(event,'proj1')">📷 上传封面图</div>
+        <input type="file" id="coverinput-proj1" accept="image/*" style="display:none" onchange="handleCoverUpload(event,'proj1')">
       </div>
       <div class="card-accent mid"></div>
       <div class="card-body">
@@ -421,12 +421,12 @@ body.en .en-block { display: block; }
       </div>
     </a>
 
-    <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=proj2" onclick="openArticle(event,&#39;proj2&#39;)">
+    <a class="card" href="article.html?id=proj2" onclick="openArticle(event,'proj2')">
       <div class="card-cover" id="cover-proj2">
-        <img id="coverimg-proj2" src="./方青青 Vivian Fang · Portfolio_files/cover-proj2.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <img id="coverimg-proj2" src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-proj2.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">研</span>
-        <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;proj2&#39;)">📷 上传封面图</div>
-        <input type="file" id="coverinput-proj2" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;proj2&#39;)">
+        <div class="card-cover-upload" onclick="triggerCoverUpload(event,'proj2')">📷 上传封面图</div>
+        <input type="file" id="coverinput-proj2" accept="image/*" style="display:none" onchange="handleCoverUpload(event,'proj2')">
       </div>
       <div class="card-accent mid"></div>
       <div class="card-body">
@@ -443,12 +443,12 @@ body.en .en-block { display: block; }
       </div>
     </a>
 
-    <a class="card" href="file:///C:/Users/Administrator/Downloads/article.html?id=proj3" onclick="openArticle(event,&#39;proj3&#39;)">
+    <a class="card" href="article.html?id=proj3" onclick="openArticle(event,'proj3')">
       <div class="card-cover" id="cover-proj3">
-        <img id="coverimg-proj3" src="./方青青 Vivian Fang · Portfolio_files/cover-proj3.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <img id="coverimg-proj3" src="https://raw.githubusercontent.com/VivianFang123/portfolio/main/cover-proj3.png" alt="" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <span class="card-cover-placeholder">文</span>
-        <div class="card-cover-upload" onclick="triggerCoverUpload(event,&#39;proj3&#39;)">📷 上传封面图</div>
-        <input type="file" id="coverinput-proj3" accept="image/*" style="display:none" onchange="handleCoverUpload(event,&#39;proj3&#39;)">
+        <div class="card-cover-upload" onclick="triggerCoverUpload(event,'proj3')">📷 上传封面图</div>
+        <input type="file" id="coverinput-proj3" accept="image/*" style="display:none" onchange="handleCoverUpload(event,'proj3')">
       </div>
       <div class="card-accent light"></div>
       <div class="card-body">
@@ -471,12 +471,12 @@ body.en .en-block { display: block; }
 <!-- FILES -->
 <div id="files" class="files-wrap">
   <div class="section-head" style="margin-bottom:14px;">
-    <h2 class="section-title"><span class="cn-only">文件下载</span><span class="en-only">Files &amp; Resources</span></h2>
+    <h2 class="section-title"><span class="cn-only">文件下载</span><span class="en-only">Files & Resources</span></h2>
     <div class="section-rule"></div>
   </div>
   <div class="files-box">
     <div class="files-header">
-      <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><rect x="2" y="7" width="12" height="9" rx="2" fill="rgba(255,255,255,0.3)"></rect><path d="M5 7V5a3 3 0 016 0v2" stroke="rgba(255,255,255,0.7)" stroke-width="1.3" stroke-linecap="round"></path><circle cx="8" cy="11" r="1" fill="white"></circle></svg>
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><rect x="2" y="7" width="12" height="9" rx="2" fill="rgba(255,255,255,0.3)"/><path d="M5 7V5a3 3 0 016 0v2" stroke="rgba(255,255,255,0.7)" stroke-width="1.3" stroke-linecap="round"/><circle cx="8" cy="11" r="1" fill="white"/></svg>
       <span class="files-header-title"><span class="cn-only">受保护文件</span><span class="en-only">Protected Files</span></span>
       <span class="files-header-note"><span class="cn-only">输入密码后可下载</span><span class="en-only">Enter password to access</span></span>
       <span class="lock-badge"><span class="cn-only">需要密码</span><span class="en-only">Password Required</span></span>
@@ -484,7 +484,7 @@ body.en .en-block { display: block; }
     <div class="pw-gate" id="pwGate">
       <p class="pw-label"><span class="cn-only">文件受密码保护，请输入密码后下载。</span><span class="en-only">These files are password-protected. Please enter the password to download.</span></p>
       <div class="pw-form">
-        <input class="pw-input" type="password" id="pwInput" placeholder="请输入密码" onkeydown="if(event.key===&#39;Enter&#39;)checkPw()">
+        <input class="pw-input" type="password" id="pwInput" placeholder="请输入密码" onkeydown="if(event.key==='Enter')checkPw()"/>
         <button class="pw-btn" onclick="checkPw()"><span class="cn-only">解锁</span><span class="en-only">Unlock</span></button>
       </div>
       <span class="pw-error" id="pwError"><span class="cn-only">密码错误，请重试。</span><span class="en-only">Incorrect password.</span></span>
@@ -496,8 +496,8 @@ body.en .en-block { display: block; }
           <div class="file-name">Qingqing Fang-CV-CN.pdf</div>
           <div class="file-desc"><span class="cn-only">中文简历</span><span class="en-only">Chinese resume</span></div>
         </div>
-        <a class="dl-link" href="file:///C:/Users/Administrator/Downloads/Qingqing%20Fang-CV-CN.pdf" download=""><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
-        <button class="file-del-btn" onclick="deleteFile(&#39;file-1&#39;)">✕</button>
+        <a class="dl-link" href="Qingqing Fang-CV-CN.pdf" download><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
+        <button class="file-del-btn" onclick="deleteFile('file-1')">✕</button>
       </div>
       <div class="file-item" id="file-2">
         <div class="file-icon-wrap fi-pdf">PDF</div>
@@ -505,13 +505,13 @@ body.en .en-block { display: block; }
           <div class="file-name">Qingqing Fang-CV-EN.pdf</div>
           <div class="file-desc"><span class="cn-only">英文简历</span><span class="en-only">English resume</span></div>
         </div>
-        <a class="dl-link" href="file:///C:/Users/Administrator/Downloads/Qingqing%20Fang-CV-EN.pdf" download=""><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
-        <button class="file-del-btn" onclick="deleteFile(&#39;file-2&#39;)">✕</button>
+        <a class="dl-link" href="Qingqing Fang-CV-EN.pdf" download><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg> <span class="cn-only">下载</span><span class="en-only">Download</span></a>
+        <button class="file-del-btn" onclick="deleteFile('file-2')">✕</button>
       </div>
       <div class="add-file-row">
-        <button class="add-file-btn" onclick="document.getElementById(&#39;fileUploadInput&#39;).click()">＋ <span class="cn-only">添加文件</span><span class="en-only">Add File</span></button>
+        <button class="add-file-btn" onclick="document.getElementById('fileUploadInput').click()">＋ <span class="cn-only">添加文件</span><span class="en-only">Add File</span></button>
         <span class="add-file-note cn-only">文件需同步上传至 GitHub 仓库才能供他人下载</span>
-        <input type="file" id="fileUploadInput" multiple="" style="display:none" onchange="handleFileAdd(event)">
+        <input type="file" id="fileUploadInput" multiple style="display:none" onchange="handleFileAdd(event)">
       </div>
     </div>
   </div>
@@ -522,7 +522,7 @@ body.en .en-block { display: block; }
   <div class="footer-right">
     <a href="mailto:vivifong2022@163.com"><span class="cn-only">邮箱</span><span class="en-only">Email</span></a>
     <a href="https://www.linkedin.com/in/qingqing-fang-0089943ab" target="_blank">LinkedIn</a>
-    <a href="file:///C:/Users/Administrator/Downloads/index_8.html#files"><span class="cn-only">文件</span><span class="en-only">Files</span></a>
+    <a href="#files"><span class="cn-only">文件</span><span class="en-only">Files</span></a>
   </div>
 </footer>
 
@@ -693,6 +693,5 @@ if (window.location.hash && window.location.hash.includes('recovery_token')) {
   window.netlifyIdentity && window.netlifyIdentity.open();
 }
 </script>
-
-
-<iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="./方青青 Vivian Fang · Portfolio_files/saved_resource.html"></iframe></body></html>
+</body>
+</html>
